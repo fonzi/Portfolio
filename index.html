@@ -1,66 +1,144 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Alfonso Vazquez Dev Portfolio</title>
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body style="background-color: #F4F4F4">
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <!-- Add your site or application content here -->
-        <header id="banner" class="body" style="background-color: #222222; border: 2px solid #222222; padding:0px; text-align: center">
-            <div id="master_head" class="focusable" tabindex="-1">
-                <!-- TOP ROW -->
-                <div id="top_row">
-                    <ul id ="options">
-                        <img id="BlackSheepLabsLogo" src="img/black%20sheep%20lab.png" width="8%" height="8%"  alt="Black sheep labs logo"/>
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        <a href="javaSamples.html" style="color: #DE8323">Java Samples</a>
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        <a href="PythonSamples.html" style="color: #DE8323" >Python Samples</a>
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        <a href="Resume.html" style="color: #DE8323" >Resume</a>
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alfonso Vazquez Dev Portfolio</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body style="background-color: #F4F4F4">
 
-                    </ul>
-                </div>
-            </div>
-        </header>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- Add your site or application content here -->
+<header id="banner" class="body"
+        style="background-color: #222222; border-top: 10px solid #222222;  border-bottom: 4px solid #09639e; text-align: center">
+    <div id="master_head" class="focusable" tabindex="-1">
+        <!-- TOP ROW -->
+        <div id="top_row">
+            <ul id="options">
+                <img id="BlackSheepLabsLogo" src="img/black%20sheep%20lab.png" width="8%" height="8%"
+                     alt="Black sheep labs logo"/>
+                <input id="javaSamplesButton" type="submit" value="Java Samples"
+                       onclick=location.href="pages/JavaSamples.html"/>
+                <style>
+                    input#javaSamplesButton
+                    {
+                        cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+                        padding: 5px 25px; /*add some padding to the inside of the button*/
+                        background: #076cb0; /*the colour of the button*/
+                        border: 1px solid #09639e; /*required or the default border for the browser will appear*/
+                        /*give the button curved corners, alter the size as required*/
+                        -moz-border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        border-radius: 10px;
+                        /*give the button a drop shadow*/
+                        -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                        -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                        box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                        /*style the text*/
+                        color: #f3f3f3;
+                        font-size: 1.1em;
+                    }
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+                        /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+                    input#javaSamplesButton:hover, input#javaSamplesButton:focus
+                    {
+                        background-color: #064773; /*make the background a little darker*/
+                        /*reduce the drop shadow size to give a pushed button effect*/
+                        -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                        -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                        box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                    }
+                </style>
+                <input id="PythonSamplesButton" type="submit" value="Python Samples"
+                       onclick=location.href="pages/PythonSamples.html"/>
+                <style>
+                    input#PythonSamplesButton
+                    {
+                        cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+                        padding: 5px 25px; /*add some padding to the inside of the button*/
+                        background: #076cb0; /*the colour of the button*/
+                        border: 1px solid #09639e; /*required or the default border for the browser will appear*/
+                        /*give the button curved corners, alter the size as required*/
+                        -moz-border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        border-radius: 10px;
+                        /*give the button a drop shadow*/
+                        -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                        -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                        box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                        /*style the text*/
+                        color: #f3f3f3;
+                        font-size: 1.1em;
+                    }
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
+                        /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+                    input#PythonSamplesButton:hover, input#PythonSamplesButton:focus
+                    {
+                        background-color: #064773; /*make the background a little darker*/
+                        /*reduce the drop shadow size to give a pushed button effect*/
+                        -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                        -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                        box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                    }
+                </style>
+                <input id="ResumeButton" type="submit" value="Resume" onclick=location.href="pages/Resume.html"/>
+                <style>
+                    input#ResumeButton
+                    {
+                        cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+                        padding: 5px 25px; /*add some padding to the inside of the button*/
+                        background: #076cb0; /*the colour of the button*/
+                        border: 1px solid #09639e; /*required or the default border for the browser will appear*/
+                        /*give the button curved corners, alter the size as required*/
+                        -moz-border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        border-radius: 10px;
+                        /*give the button a drop shadow*/
+                        -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                        -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                        box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                        /*style the text*/
+                        color: #f3f3f3;
+                        font-size: 1.1em;
+                    }
+
+                        /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+                    input#ResumeButton:hover, input#ResumeButton:focus
+                    {
+                        background-color: #064773; /*make the background a little darker*/
+                        /*reduce the drop shadow size to give a pushed button effect*/
+                        -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                        -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                        box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                    }
+                </style>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<p>Hello world! This is HTML5 Boilerplate.</p>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
