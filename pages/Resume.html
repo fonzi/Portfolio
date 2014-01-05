@@ -25,6 +25,37 @@
     </div>
     <div class="page-wrap">
         <nav id="button-main-nav" class="button-main-nav">
+
+            <input id="indexButton" type="submit" value=" Home " onclick=location.href="../index.html" />
+            <style>
+                input#indexButton {
+                    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+                    padding: 5px 25px; /*add some padding to the inside of the button*/
+                    background: #D97729; /*the colour of the button*/
+                    border: 1px solid #444444; /*required or the default border for the browser will appear*/
+                    /*give the button curved corners, alter the size as required*/
+                    -moz-border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    border-radius: 3px;
+                    /*give the button a drop shadow*/
+                    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                    box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                    /*style the text*/
+                    color: #f3f3f3;
+                    font-size: 1.1em;
+                }
+
+                    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+                input#indexButton:hover, input#indexButton:focus {
+                    background-color: #298bd9; /*make the background a little lighter*/
+                    /*reduce the drop shadow size to give a pushed button effect*/
+                    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                }
+            </style>
+
             <input id="javaSamplesButton" type="submit" value="Java Samples" onclick=location.href="JavaSamples.html" />
             <style>
                 input#javaSamplesButton {
@@ -54,6 +85,7 @@
                     box-shadow: 0 0 1px rgba(0, 0, 0, .75);
                 }
             </style>
+
             <input id="PythonSamplesButton" type="submit" value="Python Samples"
                    onclick=location.href="PythonSamples.html" />
             <style>
@@ -84,11 +116,12 @@
                     box-shadow: 0 0 1px rgba(0, 0, 0, .75);
                 }
             </style>
-            <input id="ResumeButton" type="submit" value="Resume" onclick=location.href="Resume.html" />
+
+            <input id="ResumeButton" type="submit" value=" " onclick=location.href="Resume.html" />
             <style>
                 input#ResumeButton {
                     cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
-                    padding: 5px 25px; /*add some padding to the inside of the button*/
+                    padding: 5px 5px; /*add some padding to the inside of the button*/
                     background: #444444; /*the colour of the button*/
                     border: 1px solid #444444; /*required or the default border for the browser will appear*/
                     /*give the button curved corners, alter the size as required*/
@@ -116,7 +149,12 @@
         </nav>
     </div>
 </header>
-
-<p>THIS IS RESUME.html</p>
+<div id="main-intro">
+    <article style="background-color: #F8F8F8; border: solid 2px #e6eff5; margin: 2em; font-family: serif">
+        <h3 style=" text-align: center"> Introduction </h3>
+        <p style="text-align: left"> Welcome. I am Alfonso Vazquez, and this is my portfolio website. Here you will find examples
+            of what kind of work I have done, such as examples, code snippets, and various links to more comprehensive material.</p>
+    </article>
+</div>
 </body>
 </html>
