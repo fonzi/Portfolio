@@ -6,7 +6,7 @@
 <!--[if IE 8]>
 <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<html class="no-js" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,113 +28,114 @@
 <!-- Add your site or application content here -->
 <header id="banner" class="body"
         style="background-color: #222222; border-top: 10px solid #222222;  border-bottom: 4px solid #09639e; text-align: center">
-    <div id="master_head" class="focusable" tabindex="-1">
+    <div id="master-head" class="focusable" tabindex="-1">
         <!-- TOP ROW -->
-        <div id="top_row">
+        <div id="top-row">
             <ul id="options">
-                <img id="BlackSheepLabsLogo" src="img/black%20sheep%20lab.png" width="8%" height="8%"
-                     alt="Black sheep labs logo"/>
-                <input id="javaSamplesButton" type="submit" value="Java Samples"
-                       onclick=location.href="pages/JavaSamples.html"/>
-                <style>
-                    input#javaSamplesButton
-                    {
-                        cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
-                        padding: 5px 25px; /*add some padding to the inside of the button*/
-                        background: #076cb0; /*the colour of the button*/
-                        border: 1px solid #09639e; /*required or the default border for the browser will appear*/
-                        /*give the button curved corners, alter the size as required*/
-                        -moz-border-radius: 10px;
-                        -webkit-border-radius: 10px;
-                        border-radius: 10px;
-                        /*give the button a drop shadow*/
-                        -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                        -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                        box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                        /*style the text*/
-                        color: #f3f3f3;
-                        font-size: 1.1em;
-                    }
-
-                        /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
-                    input#javaSamplesButton:hover, input#javaSamplesButton:focus
-                    {
-                        background-color: #064773; /*make the background a little darker*/
-                        /*reduce the drop shadow size to give a pushed button effect*/
-                        -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                        -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                        box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    }
-                </style>
-                <input id="PythonSamplesButton" type="submit" value="Python Samples"
-                       onclick=location.href="pages/PythonSamples.html"/>
-                <style>
-                    input#PythonSamplesButton
-                    {
-                        cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
-                        padding: 5px 25px; /*add some padding to the inside of the button*/
-                        background: #076cb0; /*the colour of the button*/
-                        border: 1px solid #09639e; /*required or the default border for the browser will appear*/
-                        /*give the button curved corners, alter the size as required*/
-                        -moz-border-radius: 10px;
-                        -webkit-border-radius: 10px;
-                        border-radius: 10px;
-                        /*give the button a drop shadow*/
-                        -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                        -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                        box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                        /*style the text*/
-                        color: #f3f3f3;
-                        font-size: 1.1em;
-                    }
-
-                        /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
-                    input#PythonSamplesButton:hover, input#PythonSamplesButton:focus
-                    {
-                        background-color: #064773; /*make the background a little darker*/
-                        /*reduce the drop shadow size to give a pushed button effect*/
-                        -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                        -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                        box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    }
-                </style>
-                <input id="ResumeButton" type="submit" value="Resume" onclick=location.href="pages/Resume.html"/>
-                <style>
-                    input#ResumeButton
-                    {
-                        cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
-                        padding: 5px 25px; /*add some padding to the inside of the button*/
-                        background: #076cb0; /*the colour of the button*/
-                        border: 1px solid #09639e; /*required or the default border for the browser will appear*/
-                        /*give the button curved corners, alter the size as required*/
-                        -moz-border-radius: 10px;
-                        -webkit-border-radius: 10px;
-                        border-radius: 10px;
-                        /*give the button a drop shadow*/
-                        -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                        -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                        box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                        /*style the text*/
-                        color: #f3f3f3;
-                        font-size: 1.1em;
-                    }
-
-                        /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
-                    input#ResumeButton:hover, input#ResumeButton:focus
-                    {
-                        background-color: #064773; /*make the background a little darker*/
-                        /*reduce the drop shadow size to give a pushed button effect*/
-                        -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                        -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                        box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    }
-                </style>
+                <img id="BlackSheepLabsLogo" src="img/black%20sheep%20lab.png" width="8%" height="8%" alt="Black sheep labs logo"/>
             </ul>
+            </div>
         </div>
-    </div>
+    <div class="page-wrap">
+        <nav id="button-main-nav" class="button-main-nav">
+            <input id="javaSamplesButton" type="submit" value="Java Samples" onclick=location.href="pages/JavaSamples.html" />
+            <style>
+                input#javaSamplesButton {
+                    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+                    padding: 5px 25px; /*add some padding to the inside of the button*/
+                    background: #444444; /*the colour of the button*/
+                    border: 1px solid #444444; /*required or the default border for the browser will appear*/
+                    /*give the button curved corners, alter the size as required*/
+                    -moz-border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    border-radius: 3px;
+                    /*give the button a drop shadow*/
+                    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                    box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                    /*style the text*/
+                    color: #f3f3f3;
+                    font-size: 1.1em;
+                }
+
+                    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+                input#javaSamplesButton:hover, input#javaSamplesButton:focus {
+                    background-color: #646464; /*make the background a little lighter*/
+                    /*reduce the drop shadow size to give a pushed button effect*/
+                    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                }
+            </style>
+            <input id="PythonSamplesButton" type="submit" value="Python Samples"
+                   onclick=location.href="pages/PythonSamples.html" />
+            <style>
+                input#PythonSamplesButton {
+                    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+                    padding: 5px 25px; /*add some padding to the inside of the button*/
+                    background: #444444; /*the colour of the button*/
+                    border: 1px solid #444444; /*required or the default border for the browser will appear*/
+                    /*give the button curved corners, alter the size as required*/
+                    -moz-border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    border-radius: 3px;
+                    /*give the button a drop shadow*/
+                    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                    box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                    /*style the text*/
+                    color: #f3f3f3;
+                    font-size: 1.1em;
+                }
+
+                    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+                input#PythonSamplesButton:hover, input#PythonSamplesButton:focus {
+                    background-color: #646464; /*make the background a little lighter*/
+                    /*reduce the drop shadow size to give a pushed button effect*/
+                    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                }
+            </style>
+            <input id="ResumeButton" type="submit" value="Resume" onclick=location.href="pages/Resume.html" />
+            <style>
+                input#ResumeButton {
+                    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+                    padding: 5px 25px; /*add some padding to the inside of the button*/
+                    background: #444444; /*the colour of the button*/
+                    border: 1px solid #444444; /*required or the default border for the browser will appear*/
+                    /*give the button curved corners, alter the size as required*/
+                    -moz-border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    border-radius: 3px;
+                    /*give the button a drop shadow*/
+                    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                    box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+                    /*style the text*/
+                    color: #f3f3f3;
+                    font-size: 1.1em;
+                }
+
+                    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+                input#ResumeButton:hover, input#ResumeButton:focus {
+                    background-color: #646464; /*make the background a little lighter*/
+                    /*reduce the drop shadow size to give a pushed button effect*/
+                    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+                }
+            </style>
+        </nav>
+        </div>
 </header>
 
-<p>Hello world! This is HTML5 Boilerplate.</p>
+<div id="main-intro">
+    <article style="background-color: #F8F8F8; border: solid 2px #e6eff5; margin: 2em; text-align: center">
+            <h1> Introduction </h1>
+
+    </article>
+</div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
