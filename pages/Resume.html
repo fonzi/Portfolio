@@ -27,137 +27,42 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alfonso Vazquez Portfolio: Resume</title>
+    <!-- Insert Font Awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- reference bootstrap css classes as stylesheets -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
+    <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body style="background-color: #F4F4F4; margin: 0">
-<header id="banner" class="body" style="background-color: #222222; border-top: 10px solid #222222;  border-bottom: 4px solid #09639e; text-align: center">
-    <div id="master-head" class="focusable" tabindex="-1"/>
-    <div class="page-wrap">
-        <nav id="button-main-nav" class="button-main-nav">
-            <input id="indexButton" type="submit" value=" Home " onclick=location.href="../index.html" />
-            <style>
-                input#indexButton {
-                    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
-                    padding: 5px 25px; /*add some padding to the inside of the button*/
-                    background: #444444; /*the colour of the button*/
-                    border: 1px solid #444444; /*required or the default border for the browser will appear*/
-                    /*give the button curved corners, alter the size as required*/
-                    -moz-border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                    border-radius: 3px;
-                    /*give the button a drop shadow*/
-                    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    /*style the text*/
-                    color: #f3f3f3;
-                    font-size: 1.1em;
-                }
 
-                    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
-                input#indexButton:hover, input#indexButton:focus {
-                    background-color: #646464; /*make the background a little lighter*/
-                    /*reduce the drop shadow size to give a pushed button effect*/
-                    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                }
-            </style>
-            <input id="javaSamplesButton" type="submit" value=" Java " onclick=location.href="JavaSamples.html" />
-            <style>
-                input#javaSamplesButton {
-                    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
-                    padding: 5px 25px; /*add some padding to the inside of the button*/
-                    background: #444444; /*the colour of the button*/
-                    border: 1px solid #444444; /*required or the default border for the browser will appear*/
-                    /*give the button curved corners, alter the size as required*/
-                    -moz-border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                    border-radius: 3px;
-                    /*give the button a drop shadow*/
-                    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    /*style the text*/
-                    color: #f3f3f3;
-                    font-size: 1.1em;
-                }
-
-                    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
-                input#javaSamplesButton:hover, input#javaSamplesButton:focus {
-                    background-color: #646464; /*make the background a little lighter*/
-                    /*reduce the drop shadow size to give a pushed button effect*/
-                    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                }
-            </style>
-            <input id="PythonSamplesButton" type="submit" value=" Python "
-                   onclick=location.href="PythonSamples.html" />
-            <style>
-                input#PythonSamplesButton {
-                    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
-                    padding: 5px 25px; /*add some padding to the inside of the button*/
-                    background: #444444; /*the colour of the button*/
-                    border: 1px solid #444444; /*required or the default border for the browser will appear*/
-                    /*give the button curved corners, alter the size as required*/
-                    -moz-border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                    border-radius: 3px;
-                    /*give the button a drop shadow*/
-                    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    /*style the text*/
-                    color: #f3f3f3;
-                    font-size: 1.1em;
-                }
-
-                    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
-                input#PythonSamplesButton:hover, input#PythonSamplesButton:focus {
-                    background-color: #646464; /*make the background a little lighter*/
-                    /*reduce the drop shadow size to give a pushed button effect*/
-                    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                }
-            </style>
-
-            <input id="ResumeButton" type="submit" value=" Resume " onclick=location.href="Resume.html" />
-            <style>
-                input#ResumeButton {
-                    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
-                    padding: 5px 25px; /*add some padding to the inside of the button*/
-                    background: #D97729; /*the colour of the button*/
-                    border: 1px solid #444444; /*required or the default border for the browser will appear*/
-                    /*give the button curved corners, alter the size as required*/
-                    -moz-border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                    border-radius: 3px;
-                    /*give the button a drop shadow*/
-                    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    /*style the text*/
-                    color: #f3f3f3;
-                    font-size: 1.1em;
-                }
-
-                    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
-                input#ResumeButton:hover, input#ResumeButton:focus {
-                    background-color: #298bd9; /*make the background a little lighter*/
-                    /*reduce the drop shadow size to give a pushed button effect*/
-                    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                }
-            </style>
-        </nav>
+<div class = "navbar navbar-inverse navbar-static-top">
+    <div class = "container">
+        <a href = "../index.html" class = "navbar-brand">Alfonso Vazquez</a>
+        <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+        </button>
+        <div class = "collapse navbar-collapse navHeaderCollapse">
+            <ul class = "nav navbar-nav navbar-right">
+                <li><a href = "../index.html">Home</a></li>
+                <li><a href = "../pages/JavaSamples.html">Java</a></li>
+                <li><a href = "../pages/PythonSamples.html">Python</a></li>
+                <li class="active"><a href = "../pages/Resume.html">Resume</a></li>
+            </ul>
+        </div>
     </div>
-</header>
+</div>
+<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src = "js/bootstrap.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+<script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
 
 <div id="main-intro">
     <article style="background-color: #F8F8F8; border: solid 2px #e6eff5; margin: 2em; font-family: serif">
@@ -166,12 +71,12 @@
             <tr>
                 <td>
                     <figure id="docximage">
-                        <a href="../ResumeFormats/AlfonsoVazquezResume.docx"><img id="docximg" src="../icon/Download%20format/docx512px.ico" width="100px" height="100px"></a>
+                        <a href="../ResumeFormats/2014-02-15%20Alfonso%20Vazquez%20Resume.docx"><img id="docximg" src="../icon/Download%20format/docx512px.ico" width="100px" height="100px"></a>
                     </figure>
                 </td>
                 <td>
                     <figure id="pdf">
-                        <a href="../ResumeFormats/AlfonsoVazquezResume.pdf"><img id="pdfimg" src="../icon/Download%20format/pdf512px.ico" width="100px" height="100px"></a>
+                        <a href="../ResumeFormats/2014-02-15%20Alfonso%20Vazquez%20Resume.pdf"><img id="pdfimg" src="../icon/Download%20format/pdf512px.ico" width="100px" height="100px"></a>
                     </figure>
                 </td>
                 <style>
@@ -185,49 +90,55 @@
                     }
                 </style>
          </table>
-
         <iframe src="https://docs.google.com/document/d/1EhwAdXkXXj2b0GCQxcEuyQbWCmbCdPeg9fQP24EBJLE/edit?usp=sharing"
-                height="1200" width="100%"/>
+                height="1200" width="100%">
+        </iframe>
     </article>
 </div>
 
-<footer  id="footer" style="background-color: #f8f8f8">
-    <table style="width: 40%; margin: 0 auto;">
-        <tr>
-            <td>
-                <figure id="html5 image">
-                    <img id="htmlicon" src="../icon/footer%20links/html5512px.ico" width="25px" height="25px">
-                </figure>
-            </td>
-            <td>
+<div id="footer" class="container">
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="navbar-inner navbar-content-center">
+            <table style="width: 40%; margin: 0 auto;">
+                <tr>
+                    <td>
+                        <figure id="html5 image">
+                            <i class="fa fa-html5 " style="font-size: 40px; color: orangered"></i>
+                        </figure>
+                    </td>
+                    <td>
                 <span id="gitbug link">
-                <a href="https://github.com/fonzi"><img id="githubicon" src="../icon/footer%20links/github256px.ico"width="25px"height="25px"
-                                                        alt="Git hub ico"></a>
+                <a href="https://github.com/fonzi"><i class="fa fa-github-alt" style="font-size:30px"></i></a>
                 </span>
-            </td>
-            <td>
+                        <style>
+                            a:visited{
+                                color: #000000;
+                            }
+                        </style>
+                    </td>
+                    <td>
                 <span id="bitbucker link">
-                    <a href="https://bitbucket.org/fonzi_vazquez"><img src="../icon/footer%20links/bitbucker256px.ico" width="25px" height="25px"alt="Bit bucket icon"></a>
+                    <a href="https://bitbucket.org/fonzi_vazquez"><i class="fa fa-bitbucket" style="font-size: 30px"></i></a>
                 </span>
-            </td>
-            <td>
+                    </td>
+                    <td>
                 <span id="linkedin link">
-                    <a href="http://www.linkedin.com/in/vazquezalfonso/"><img src="../icon/footer%20links/linkedin256px.ico" width="25px" height="25px"alt="linked in icon"></a>
+                    <a href="http://www.linkedin.com/in/vazquezalfonso/"><i class="fa fa-linkedin-square" style="font-size: 30px"></i></a>
                 </span>
-            </td>
-            <td>
+                    </td>
+                    <td>
                 <span id="wordpress">
-                    <a href="http://developvazquez.com/blog"><img src="../icon/footer%20links/wordpress512px.ico" width="25px" height="25px"alt="wordpress icon"></a>
+                    <a href="http://developvazquez.com/blog"><i class="icon-wordpress" style="font-size: 30px"></i></a>
                 </span>
-            </td>
-            <td>
+                    </td>
+                    <td>
                 <span id="owncloud">
-                    <a href="http://developvazquez.com/owncloud"><img src="../icon/footer%20links/cloudupload512px.ico" width="25px" height="25px"alt="cloud icon"></a>
+                    <a href="http://developvazquez.com/owncloud"><i class="fa fa-cloud" style="font-size: 30px"></i></a>
                 </span>
-            </td>
-            <td>
+                    </td>
+                    <td>
                 <span id="rss">
-                    <a href="#openModal"><img src="../icon/footer%20links/rss512px.ico" width="25px" height="25px" alt="cloud icon"></a>
+                    <a href="#openModal"><i class="fa fa-rss" style="font-size: 30px"></i></a>
                     <div id="openModal" class="modalWindow">
                         <div>
 
@@ -332,28 +243,32 @@
                         </style>
                     </div>
                 </span>
-            </td>
-            <td>
+                    </td>
+                    <td>
                 <span id="mouseclicks">
                     <a href="#" onclick="alert('you have clicked the mouse '+ clicks + ' times')">
                         <script type="text/javascript">var clicks = 0;</script>
                         <input value="Click" type="image" src="../icon/footer%20links/mouse256px.ico" width="25px" height="25px" alt="mouse icon" onclick="clicks++">
                     </a>
                 </span>
-            </td>
-        </tr>
-        <style>
-            img
-            {
-                opacity: 1;
-            }
-            img:hover
-            {
-                opacity: .5;
-            }
-        </style>
-    </table>
-</footer>
+                    </td>
+                </tr>
+                <style>
+                    img
+                    {
+                        opacity: 1;
+                    }
+                    img:hover
+                    {
+                        opacity: .5;
+                    }
+                </style>
+            </table>
+        </div>
+    </nav>
+</div>
+<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src = "js/bootstrap.js"></script>
 
 </body>
 </html>

@@ -13,141 +13,45 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alfonso Vazquez Portfolio: Java Samples</title>
+    <!-- Insert Font Awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- reference bootstrap css classes as stylesheets -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
+    <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 
 <body style="background-color: #F4F4F4; margin: 0">
-<header id="banner" class="body" style="background-color: #222222; border-top: 10px solid #222222;  border-bottom: 4px solid #09639e; text-align: center">
-    <div id="master-head" class="focusable" tabindex="-1"/>
-    <div class="page-wrap">
-        <nav id="button-main-nav" class="button-main-nav">
-            <input id="indexButton" type="submit" value=" Home " onclick=location.href="index.html" />
-            <style>
-                input#indexButton {
-                    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
-                    padding: 5px 25px; /*add some padding to the inside of the button*/
-                    background: #444444; /*the colour of the button*/
-                    border: 1px solid #444444; /*required or the default border for the browser will appear*/
-                    /*give the button curved corners, alter the size as required*/
-                    -moz-border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                    border-radius: 3px;
-                    /*give the button a drop shadow*/
-                    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    /*style the text*/
-                    color: #f3f3f3;
-                    font-size: 1.1em;
-                }
 
-                    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
-                input#indexButton:hover, input#indexButton:focus {
-                    background-color: #646464; /*make the background a little lighter*/
-                    /*reduce the drop shadow size to give a pushed button effect*/
-                    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                }
-            </style>
-
-            <input id="javaSamplesButton" type="submit" value=" Java " onclick=location.href="JavaSamples.html" />
-            <style>
-                input#javaSamplesButton
-                {
-                    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
-                    padding: 5px 25px; /*add some padding to the inside of the button*/
-                    background: #D97729; /*the colour of the button*/
-                    border: 1px solid #444444; /*required or the default border for the browser will appear*/
-                    /*give the button curved corners, alter the size as required*/
-                    -moz-border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                    border-radius: 3px;
-                    /*give the button a drop shadow*/
-                    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    /*style the text*/
-                    color: #f3f3f3;
-                    font-size: 1.1em;
-                }
-
-                /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
-                input#javaSamplesButton:hover, input#javaSamplesButton:focus
-                {
-                    background-color: #298bd9; /*make the background a little lighter*/
-                    /*reduce the drop shadow size to give a pushed button effect*/
-                    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                }
-            </style>
-            <input id="PythonSamplesButton" type="submit" value=" Python "
-                   onclick=location.href="PythonSamples.html" />
-            <style>
-                input#PythonSamplesButton {
-                    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
-                    padding: 5px 25px; /*add some padding to the inside of the button*/
-                    background: #444444; /*the colour of the button*/
-                    border: 1px solid #444444; /*required or the default border for the browser will appear*/
-                    /*give the button curved corners, alter the size as required*/
-                    -moz-border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                    border-radius: 3px;
-                    /*give the button a drop shadow*/
-                    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    /*style the text*/
-                    color: #f3f3f3;
-                    font-size: 1.1em;
-                }
-
-                    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
-                input#PythonSamplesButton:hover, input#PythonSamplesButton:focus {
-                    background-color: #646464; /*make the background a little lighter*/
-                    /*reduce the drop shadow size to give a pushed button effect*/
-                    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                }
-            </style>
-            <input id="ResumeButton" type="submit" value="Resume" onclick=location.href="Resume.html" />
-            <style>
-                input#ResumeButton {
-                    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
-                    padding: 5px 25px; /*add some padding to the inside of the button*/
-                    background: #444444; /*the colour of the button*/
-                    border: 1px solid #444444; /*required or the default border for the browser will appear*/
-                    /*give the button curved corners, alter the size as required*/
-                    -moz-border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                    border-radius: 3px;
-                    /*give the button a drop shadow*/
-                    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-                    /*style the text*/
-                    color: #f3f3f3;
-                    font-size: 1.1em;
-                }
-
-                    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
-                input#ResumeButton:hover, input#ResumeButton:focus {
-                    background-color: #646464; /*make the background a little lighter*/
-                    /*reduce the drop shadow size to give a pushed button effect*/
-                    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-                }
-            </style>
-        </nav>
+<div class = "navbar navbar-inverse navbar-fixed-top">
+    <div class = "container">
+        <a href = "../index.html" class = "navbar-brand">Alfonso Vazquez</a>
+        <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+        </button>
+        <div class = "collapse navbar-collapse navHeaderCollapse">
+            <ul class = "nav navbar-nav navbar-right">
+                <li><a href = "../index.html">Home</a></li>
+                <li class="active"><a href = "../pages/JavaSamples.html">Java</a></li>
+                <li><a href = "../pages/PythonSamples.html">Python</a></li>
+                <li><a href = "../pages/Resume.html">Resume</a></li>
+            </ul>
+        </div>
     </div>
-</header>
-<div id="main-java">
+</div>
+<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src = "js/bootstrap.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+<script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+
+<div id="main-java" style="width:75%; margin: 0 auto;">
     <article style="background-color: #F8F8F8; border: solid 2px #e6eff5; margin: 2em; font-family: serif">
         <h3 style=" text-align: center"> Java Experience </h3>
         <p style="text-align: left">
@@ -180,19 +84,23 @@
         <p style="text-align: left">
             I used a main Abstract class to initialize the bare bones, web driver for the browser.
             <br>
-                <pre>
-                    <code>
+            <br>
+
+                    <code id="code1" style="text-align: center">
                         protected String myBaseUrl = "http://www.developvazquez.com";
                         protected String myBrowser = "chrome";
                     </code>
-                </pre>
-            these two lines specifically are to run as Junit without Ant as the manager, a change of chrome to X broser would be needed.
+            <br>
+            <br>
+            these two lines specifically are to run as Junit without Ant as the manager, a change of chrome to X browser would be needed.
             such as
-                <pre>
-                    <code>
+            <br>
+            <br>
+                    <code id="code2" style="text-align: center">
                         protected String myBrowser = "firefox";
                     </code>
-                </pre>
+            <br>
+            <br>
         </p>
         <p style="text-align: left">
             Using all three Xpath, Css and Id selectors I have confirmed with H2Database and carrotLabs search API that CSS selectors are the best to navigate this
@@ -207,54 +115,178 @@
     </article>
 </div>
 
-
-<footer  id="footer" style="background-color: #f8f8f8">
-    <table style="width: 40%; margin: 0 auto;">
-        <tr>
-            <td>
-                <figure id="html5 image">
-                    <img id="htmlicon" src="../icon/footer%20links/html5512px.ico" width="25px" height="25px">
-                </figure>
-            </td>
-            <td>
+<div id="footer" class="container">
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="navbar-inner navbar-content-center">
+            <table style="width: 40%; margin: 0 auto;">
+                <tr>
+                    <td>
+                        <figure id="html5 image">
+                            <i class="fa fa-html5 " style="font-size: 40px; color: orangered"></i>
+                        </figure>
+                    </td>
+                    <td>
                 <span id="gitbug link">
-                <a href="https://github.com/fonzi"><img id="githubicon" src="../icon/footer%20links/github256px.ico"width="25px"height="25px"alt="Git hub ico"></a>
-            </span>
-            </td>
-            <td>
+                <a href="https://github.com/fonzi"><i class="fa fa-github-alt" style="font-size:30px"></i></a>
+                </span>
+                        <style>
+                            a:visited{
+                                color: #000000;
+                            }
+                        </style>
+                    </td>
+                    <td>
                 <span id="bitbucker link">
-                    <a href="https://bitbucket.org/fonzi_vazquez"><img src="../icon/footer%20links/bitbucker256px.ico" width="25px" height="25px"alt="Bit bucket icon"></a>
+                    <a href="https://bitbucket.org/fonzi_vazquez"><i class="fa fa-bitbucket" style="font-size: 30px"></i></a>
                 </span>
-            </td>
-            <td>
+                    </td>
+                    <td>
                 <span id="linkedin link">
-                    <a href="http://www.linkedin.com/in/vazquezalfonso/"><img src="../icon/footer%20links/linkedin256px.ico" width="25px" height="25px"alt="linked in icon"></a>
+                    <a href="http://www.linkedin.com/in/vazquezalfonso/"><i class="fa fa-linkedin-square" style="font-size: 30px"></i></a>
                 </span>
-            </td>
-            <td>
+                    </td>
+                    <td>
                 <span id="wordpress">
-                    <a href="http://developvazquez.com/blog"><img src="../icon/footer%20links/wordpress512px.ico" width="25px" height="25px"alt="wordpress icon"></a>
+                    <a href="http://developvazquez.com/blog"><i class="icon-wordpress" style="font-size: 30px"></i></a>
                 </span>
-            </td>
-            <td>
+                    </td>
+                    <td>
                 <span id="owncloud">
-                    <a href="http://developvazquez.com/owncloud"><img src="../icon/footer%20links/cloudupload512px.ico" width="25px" height="25px"alt="cloud icon"></a>
+                    <a href="http://developvazquez.com/owncloud"><i class="fa fa-cloud" style="font-size: 30px"></i></a>
                 </span>
-            </td>
-        </tr>
-        <style>
-            img
-            {
-                opacity: 1;
-            }
-            img:hover
-            {
-                opacity: .5;
-            }
-        </style>
-    </table>
-</footer>
+                    </td>
+                    <td>
+                <span id="rss">
+                    <a href="#openModal"><i class="fa fa-rss" style="font-size: 30px"></i></a>
+                    <div id="openModal" class="modalWindow">
+                        <div>
 
+                            <div class="modalHeader">
+                                <h2>RSS subscription Link</h2>
+                                <a href="#close" title="Close" class="close">X</a>
+                            </div>
+
+                            <div class="modalContent">
+                                <p>Copy and Paste the URI Link to your Favorite RSS Reader</p>
+                                <code>http://developvazquez.com/blog/?feed=rss2</code>
+                                <p>This will let you know when the newest blog post is ready to read.</p>
+                            </div>
+
+                            <div class="modalFooter">
+                                <!--
+                                <a href="#cancel" title="Cancel" class="cancel">Cancel</a>
+                                <a href="#ok" title="Ok" class="ok">Apply</a>
+                                <p>Keep in mind that this is a demo</p>
+                                <div class="clear"></div>\
+                                -->
+                            </div>
+                        </div>
+                        <style>
+                            .modalWindow {
+                                position: fixed;
+                                font-family: arial;
+                                font-size:80%;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                background: rgba(0,0,0,0.2);
+                                z-index: 99999;
+                                opacity:0;
+                                -webkit-transition: opacity 400ms ease-in;
+                                -moz-transition: opacity 400ms ease-in;
+                                transition: opacity 400ms ease-in;
+                                pointer-events: none;
+                            }
+                            .modalHeader h2 { color: #189CDA; border-bottom: 2px groove #efefef; }
+                            .modalWindow:target {
+                                opacity:1;
+                                pointer-events: auto;
+                            }
+                            .modalWindow > div {
+                                width: 500px;
+                                position: relative;
+                                margin: 10% auto;
+                                -webkit-border-radius: 5px;
+                                -moz-border-radius: 5px;
+                                border-radius: 5px;
+                                background: #fff;
+                            }
+                            .modalWindow .modalHeader  {    padding: 5px 20px 0px 20px; }
+                            .modalWindow .modalContent {    padding: 0px 20px 5px 20px; }
+                            .modalWindow .modalFooter  {    padding: 8px 20px 8px 20px; }
+                            .modalFooter {
+                                background: #F1F1F1;
+                                border-top: 1px solid #999;
+                                -moz-box-shadow: inset 0px 13px 12px -14px #888;
+                                -webkit-box-shadow: inset 0px 13px 12px -14px #888;
+                                box-shadow: inset 0px 13px 12px -14px #888;
+                            }
+                            .modalFooter p {
+                                color:#D4482D;
+                                text-align:right;
+                                margin:0;
+                                padding: 5px;
+                            }
+                            .ok, .close, .cancel {
+                                background: #606061;
+                                color: #FFFFFF;
+                                line-height: 25px;
+                                text-align: center;
+                                text-decoration: none;
+                                font-weight: bold;
+                                -webkit-border-radius: 2px;
+                                -moz-border-radius: 2px;
+                                border-radius: 2px;
+                                -moz-box-shadow: 1px 1px 3px #000;
+                                -webkit-box-shadow: 1px 1px 3px #000;
+                                box-shadow: 1px 1px 3px #000;
+                            }
+                            .close {
+                                position: absolute;
+                                right: 5px;
+                                top: 5px;
+                                width: 22px;
+                                height: 22px;
+                                font-size: 10px;
+
+                            }
+                            .ok, .cancel {
+                                width:80px;
+                                float:right;
+                                margin-left:20px;
+                            }
+                            .ok:hover { background: #189CDA; }
+                            .close:hover, .cancel:hover { background: #D4482D; }
+                            .clear { float:none; clear: both; }
+                        </style>
+                    </div>
+                </span>
+                    </td>
+                    <td>
+                <span id="mouseclicks">
+                    <a href="#" onclick="alert('you have clicked the mouse '+ clicks + ' times')">
+                        <script type="text/javascript">var clicks = 0;</script>
+                        <input value="Click" type="image" src="../icon/footer%20links/mouse256px.ico" width="25px" height="25px" alt="mouse icon" onclick="clicks++">
+                    </a>
+                </span>
+                    </td>
+                </tr>
+                <style>
+                    img
+                    {
+                        opacity: 1;
+                    }
+                    img:hover
+                    {
+                        opacity: .5;
+                    }
+                </style>
+            </table>
+        </div>
+    </nav>
+</div>
+<script src = "js/bootstrap.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
